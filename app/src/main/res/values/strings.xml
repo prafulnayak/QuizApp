@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="question1">1. What is Manifest.xml in android?</string>
+    <string name="q1Option1">It has information about layout in an application</string>
+    <string name="q1Option2">It has the information about activities in an application</string>
+    <string name="q1Option3">It has all the information about an application</string>
+    <string name="q1Option4">None of the above</string>
+    <string name="q1Answer">3</string>
+
+    <string name="question2">2. How to stop the services in android?</string>
+    <string name="q2Option1">finish()</string>
+    <string name="q2Option2">system.exit()</string>
+    <string name="q2Option3">By manually</string>
+    <string name="q2Option4">stopSelf() and stopService()</string>
+    <string name="q2Answer">4</string>
+
+    <string name="question3">3. What is a base adapter in android?</string>
+    <string name="q3Option1">Base Adapter is a common class for any adapter, which can we use for both ListView and spinner</string>
+    <string name="q3Option2">A kind of adapter</string>
+    <string name="q3Option3">Data storage space</string>
+    <string name="q3Option4">None of the above</string>
+    <string name="q3Answer">1</string>
+
+    <string name="question4">4. Write Full form of API</string>
+    <string name="q4Answer">application program interface</string>
+
+    <string name="question5">5. Write the Name of Google CEO</string>
+    <string name="q5Answer">Sundar Pichai</string>
+
 </resources>
