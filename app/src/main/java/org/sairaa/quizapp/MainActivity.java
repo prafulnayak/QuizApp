@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkQuestion3();
         checkQuestion4();
         checkQuestion5();
-//        Toast.makeText(MainActivity.this,"ass",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,""+getString(R.string.score)+" "+score+" "+getString(R.string.outOf),Toast.LENGTH_LONG).show();
+        score = 0;
     }
 
     private void checkQuestion5() {
@@ -71,8 +72,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 q4Answer.setTextColor(getResources().getColor(R.color.red));
             }
         }
-
-
     }
 
     private void checkQuestion3() {
@@ -98,10 +97,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 r4.setTextColor(getResources().getColor(R.color.green));
                 break;
             default:
-
         }
         // find the radiobutton by returned id
-        Toast.makeText(MainActivity.this,""+selectedID2,Toast.LENGTH_SHORT).show();
+
         if(selectedID2 != -1){
             radioButton = findViewById(selectedID2);
             switch (selectedID2){
@@ -111,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 1",Toast.LENGTH_SHORT).show();
+
 
                     break;
                 case R.id.radioGroup3Option2:
@@ -120,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 2",Toast.LENGTH_SHORT).show();
+
                     break;
                 case R.id.radioGroup3Option3:
                     if(rightAnswer == Integer.parseInt(getString(R.string.option3))){
@@ -128,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 3",Toast.LENGTH_SHORT).show();
+
                     break;
                 case R.id.radioGroup3Option4:
                     if(rightAnswer == Integer.parseInt(getString(R.string.option4))){
@@ -136,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 4",Toast.LENGTH_SHORT).show();
+
                     break;
                 default:
 
@@ -147,7 +145,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void checkQuestion2() {
-//        int answer2 = 0;
         int selectedID2 = radioGroup2.getCheckedRadioButtonId();
         int rightAnswer = Integer.parseInt(getString(R.string.q2Answer));
         RadioButton r1,r2,r3,r4;
@@ -173,7 +170,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
         // find the radiobutton by returned id
-        Toast.makeText(MainActivity.this,""+selectedID2,Toast.LENGTH_SHORT).show();
+
         if(selectedID2 != -1){
             radioButton = findViewById(selectedID2);
             switch (selectedID2){
@@ -183,8 +180,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 1",Toast.LENGTH_SHORT).show();
-
                     break;
                 case R.id.radioGroup2Option2:
                     if(rightAnswer == Integer.parseInt(getString(R.string.option2))){
@@ -192,7 +187,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 2",Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.radioGroup2Option3:
                     if(rightAnswer == Integer.parseInt(getString(R.string.option3))){
@@ -200,7 +194,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 3",Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.radioGroup2Option4:
                     if(rightAnswer == Integer.parseInt(getString(R.string.option4))){
@@ -208,7 +201,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         radioButton.setTextColor(getResources().getColor(R.color.green));
                     }else
                         radioButton.setTextColor(getResources().getColor(R.color.red));
-//                    Toast.makeText(MainActivity.this,"opt 4",Toast.LENGTH_SHORT).show();
                     break;
                 default:
 
@@ -225,7 +217,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 q1Option1.setTextColor(getResources().getColor(R.color.green));
                 if(q1Option1.isChecked() && !q1Option2.isChecked() && !q1Option3.isChecked() && !q1Option4.isChecked()){
                     score++;
-//                    q1Option1.setTextColor(getResources().getColor(R.color.green));
                 }
                 if(q1Option2.isChecked()){
                     q1Option2.setTextColor(getResources().getColor(R.color.red));
@@ -275,7 +266,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 q1Option4.setTextColor(getResources().getColor(R.color.green));
                 if(!q1Option1.isChecked() && !q1Option2.isChecked() && !q1Option3.isChecked() && q1Option4.isChecked()){
                     score++;
-
                 }
                 if(q1Option1.isChecked()){
                     q1Option1.setTextColor(getResources().getColor(R.color.red));

@@ -30,5 +30,8 @@
     <string name="option2">2</string>
     <string name="option3">3</string>
     <string name="option4">4</string>
+    <string name="submit">Submit</string>
+    <string name="score">Your Score is : </string>
+    <string name="outOf"> Out of 5.</string>
 
 </resources>
