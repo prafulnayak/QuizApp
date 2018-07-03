@@ -26,5 +26,9 @@
 
     <string name="question5">5. Write the Name of Google CEO</string>
     <string name="q5Answer">Sundar Pichai</string>
+    <string name="option1">1</string>
+    <string name="option2">2</string>
+    <string name="option3">3</string>
+    <string name="option4">4</string>
 
 </resources>
